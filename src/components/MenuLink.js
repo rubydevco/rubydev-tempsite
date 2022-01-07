@@ -1,9 +1,17 @@
 import { Box } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react';
 
-const MenuLink = () => {
+const MenuLink = ({ text }) => {
   return (
     <div>
-      <Box bg='black'>HEYO</Box>
+      <Link
+        href='https://chakra-ui.com'
+        isExternal
+        style={{ textDecoration: 'none' }}
+      >
+        <Box className='menu-link'>{text}</Box>
+      </Link>
+      <hr />
     </div>
   );
 };

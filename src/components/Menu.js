@@ -8,14 +8,14 @@ const Menu = () => {
       <Flex color='white'>
         <Center flex='1' m={4}>
           <Box bg='black' w='50%' p={4} color='white'>
-            <MenuLink />
-            <MenuLink />
-            <MenuLink />
-            <MenuLink />
+            <MenuLink text='Get Started' />
+            <MenuLink text='Portfolio' />
+            <MenuLink text='About Us' />
+            <MenuLink text='Dark Mode' />
           </Box>
         </Center>
         <Center w='50vw'>
-          <h2>Nothing</h2>
+          <h2></h2>
         </Center>
       </Flex>
     </section>

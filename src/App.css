@@ -7,3 +7,19 @@
   position: relative;
   top: 20vh !important;
 }
+
+.menu-link {
+  background-color: black;
+  padding-right: 6px;
+  padding-top: 2px;
+  margin-bottom: 6px;
+  text-align: right;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-link:hover {
+  background-color: white;
+  color: black;
+  padding-bottom: 30px;
+}
