@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/react';
+import { Divider } from '@chakra-ui/react';
 
 const MenuLink = ({ text }) => {
   return (
@@ -11,7 +12,7 @@ const MenuLink = ({ text }) => {
       >
         <Box className='menu-link'>{text}</Box>
       </Link>
-      <hr />
+      <hr className='break' />
     </div>
   );
 };
