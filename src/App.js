@@ -1,4 +1,6 @@
-import Menu from './components/Menu';
+import Main from './components/Main';
+import GettingStarted from './components/GettingStarted/GettingStarted';
+import Routes from './Routes';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import './App.css';
@@ -6,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <ChakraProvider>
-      <Menu />
+      <Routes />
     </ChakraProvider>
   );
 }
