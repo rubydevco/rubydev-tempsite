@@ -2,3 +2,8 @@
   background-color: #18191a;
   color: white;
 }
+
+.menu {
+  position: relative;
+  top: 20vh !important;
+}
