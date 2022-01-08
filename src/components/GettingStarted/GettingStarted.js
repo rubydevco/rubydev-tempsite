@@ -1,9 +1,9 @@
-import PriceBlock from './PriceBlock';
+import PriceBlocks from './PriceBlocks';
 
 const GettingStarted = () => {
   return (
     <>
-      <PriceBlock />
+      <PriceBlocks />
     </>
   );
 };
