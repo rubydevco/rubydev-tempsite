@@ -1,5 +1,5 @@
-* {
-  color: white;
+hr {
+  background: white;
 }
 
 .menu {
@@ -23,6 +23,19 @@
   padding-bottom: 30px;
 }
 
-hr {
-  background: white;
+.getting-started {
+  margin: 12vh 20vw;
+}
+
+.prices-title {
+  font-size: 2rem;
+  margin-bottom: 7vh;
+  text-align: center;
+}
+
+.price-blocks {
+}
+
+.price-block-text {
+  color: black;
 }
