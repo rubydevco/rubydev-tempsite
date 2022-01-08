@@ -7,12 +7,11 @@ const PriceBlock = ({ type }) => {
       </Box>
       <Box bg='gray.100' color='black' p={4}>
         <div className='price-block-text'>
-          <p>{type.title}</p>
-          <p>What</p>
-          <p>What</p>
-          <p>What</p>
-          <p>What</p>
-          <p>What</p>
+          <p>{type.point1}</p>
+          <p>{type.point2}</p>
+          <p>{type.point3}</p>
+          <p>{type.point4}</p>
+          <p>{type.point5}</p>
         </div>
       </Box>
     </div>
