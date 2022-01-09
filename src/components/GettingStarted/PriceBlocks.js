@@ -23,7 +23,8 @@ const PriceBlocks = () => {
     point1: 'Online Store',
     point2: 'Add & Change Features',
     point3: '5-10 Pages',
-    point4: 'Good for Selling Products Online',
+    point4: 'Pay a monthly e-commerce fee',
+    point5: 'Good for Selling Products Online',
   };
   return (
     <div>

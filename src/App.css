@@ -1,4 +1,7 @@
 hr {
+  position: relative;
+  border: none;
+  height: 2px !important;
   background: white;
 }
 
@@ -33,9 +36,19 @@ hr {
   text-align: center;
 }
 
-.price-blocks {
+.price-block {
+  border-radius: 10px 10px 0px 0px;
 }
 
 .price-block-text {
   color: black;
+}
+
+.price-block-point {
+  padding: 12px 16px;
+}
+
+.price-block-point:hover {
+  background-color: #1a202c;
+  color: white;
 }

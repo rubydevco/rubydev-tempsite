@@ -24,11 +24,6 @@ const Menu = () => {
           </Center>
         </GridItem>
       </Grid>
-      {/* <Flex color='white'>
-        <Center w='50vw'>
-          <h2></h2>
-        </Center>
-      </Flex> */}
     </section>
   );
 };
