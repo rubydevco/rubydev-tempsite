@@ -3,7 +3,7 @@ import { Center, Grid, GridItem, Box } from '@chakra-ui/react';
 
 const PriceBlocks = () => {
   const basicSite = {
-    title: 'Basic Site',
+    title: 'BASIC',
     point1: 'Simple Website',
     point2: 'Fast Loading',
     point3: "Doesn't change often",
@@ -11,19 +11,19 @@ const PriceBlocks = () => {
     point5: 'Good for Portfolios or Information Sites',
   };
   const professionalSite = {
-    title: 'Profesional Site',
-    point1: 'Professional Fancy & Custom Built For You',
+    title: 'PROFESSIONAL',
+    point1: 'Professional, Fancy & Custom Built For You',
     point2: 'Fast Loading',
     point3: 'Add & Change Features',
     point4: '5-10 Pages',
     point5: 'Good for Blogging & Displaying Products',
   };
   const ecommerceSite = {
-    title: 'E-Commerce Site',
+    title: 'E-COMMERCE',
     point1: 'Online Store',
     point2: 'Add & Change Features',
     point3: '5-10 Pages',
-    point4: 'Pay a monthly e-commerce fee',
+    point4: 'A monthly e-commerce fee',
     point5: 'Good for Selling Products Online',
   };
   return (

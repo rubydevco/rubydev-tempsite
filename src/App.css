@@ -34,14 +34,22 @@ hr {
   font-size: 2rem;
   margin-bottom: 7vh;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 .price-block {
   border-radius: 10px 10px 0px 0px;
 }
 
+.price-block-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
 .price-block-text {
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .price-block-point {
