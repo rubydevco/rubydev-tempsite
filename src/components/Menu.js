@@ -15,10 +15,22 @@ const Menu = () => {
                 to='/getting-started'
                 style={{ textDecoration: 'none' }}
               >
-                <MenuLink text='Get Started' somethingElse='/getting-started' />
+                <MenuLink text='Get Started' />
               </Link>
-              <MenuLink text='Portfolio' />
-              <MenuLink text='About Us' />
+              <Link
+                as={RouterLink}
+                to='/portfolio'
+                style={{ textDecoration: 'none' }}
+              >
+                <MenuLink text='Portfolio' />
+              </Link>
+              <Link
+                as={RouterLink}
+                to='/about-us'
+                style={{ textDecoration: 'none' }}
+              >
+                <MenuLink text='About Us' />
+              </Link>
               <MenuLink text='Dark Mode' />
             </Box>
           </Center>
