@@ -1,5 +1,5 @@
 import PriceBlock from './PriceBlock';
-import { Center, Grid, GridItem, Box } from '@chakra-ui/react';
+import { Grid, Box } from '@chakra-ui/react';
 
 const PriceBlocks = () => {
   const basicSite = {
