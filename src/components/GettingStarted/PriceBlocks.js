@@ -9,6 +9,7 @@ const PriceBlocks = () => {
     point3: "Doesn't change often",
     point4: '5 Pages',
     point5: 'Good for Portfolios or Information Sites',
+    price: '$300',
   };
   const professionalSite = {
     title: 'PROFESSIONAL',
@@ -17,6 +18,7 @@ const PriceBlocks = () => {
     point3: 'Add & Change Features',
     point4: '5-10 Pages',
     point5: 'Good for Blogging & Displaying Products',
+    price: '$500',
   };
   const ecommerceSite = {
     title: 'E-COMMERCE',
@@ -25,6 +27,7 @@ const PriceBlocks = () => {
     point3: '5-10 Pages',
     point4: 'A monthly e-commerce fee',
     point5: 'Good for Selling Products Online',
+    price: '$500',
   };
   return (
     <div>

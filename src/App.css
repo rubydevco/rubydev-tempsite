@@ -5,6 +5,8 @@ hr {
   background: white;
 }
 
+/* All the CSS for the home page */
+
 .menu {
   position: relative;
   top: 20vh !important;
@@ -26,6 +28,8 @@ hr {
   padding-bottom: 30px;
 }
 
+/* All the CSS for the pricing/getting started page */
+
 .getting-started {
   margin: 12vh 20vw;
 }
@@ -37,7 +41,7 @@ hr {
   font-family: 'Oswald', sans-serif;
 }
 
-.price-block {
+.price-block-title-box {
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -59,4 +63,10 @@ hr {
 .price-block-point:hover {
   background-color: #1a202c;
   color: white;
+}
+
+.price-block-price {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
