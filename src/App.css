@@ -78,3 +78,9 @@ hr {
   font-size: 2.5rem;
   margin-bottom: 2.5vh;
 }
+
+.portfolio-image-caption {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 1.9vh;
+}
