@@ -8,8 +8,9 @@ hr {
 /* All the CSS for the home page */
 
 .menu {
-  position: relative;
+  position: absolute;
   top: 20vh !important;
+  width: 100vw;
 }
 
 .menu-link {
