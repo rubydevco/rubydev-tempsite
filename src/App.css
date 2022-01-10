@@ -79,8 +79,14 @@ hr {
   margin-bottom: 2.5vh;
 }
 
+.portfolio-image-caption h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.9vh;
+}
 .portfolio-image-caption {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin: 1.9vh;
+  margin-bottom: 1.9vh;
 }

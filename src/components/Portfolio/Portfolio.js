@@ -13,42 +13,50 @@ const Portfolio = () => {
     {
       img: thirtyfivemm,
       link: 'https://www.35mm.website/',
+      title: '35mm',
       caption: 'A photo gallery of travelling through Vietnam',
     },
     {
       img: merci,
       link: 'https://www.mercicanada.org/',
+      title: 'MERCI',
       caption: 'idk what this site does',
     },
     {
       img: thatmakergirl,
       link: 'https://www.thatmakergirl.ca/',
+      title: 'That Maker Girl',
       caption: 'Storefront bringing local handmade art ideas to life',
     },
     {
       img: designleague,
       link: 'https://www.uottawadesignleague.ca/',
+      title: 'uOttawa Design League',
       caption: 'An event for a 3-day University of Ottawa student event',
     },
     {
       img: cvuo,
       link: 'https://cvuo.ca/',
+      title: 'CVUO',
       caption: 'The massive clubs portal for the University of Ottawa',
     },
     {
       img: mess,
       link: 'https://mess-segm.ca/',
+      title: 'MESS',
       caption: 'The hub for the Mechanical Engineering Student Society',
     },
     {
       img: mpsp,
       link: 'https://uottawampsp.com/',
+      title: 'uOttawa MPSP',
       caption:
         'A site for students aspiring for the opportunity to participate as members of Parliament at the House of Commons',
     },
     {
       img: ruby,
       link: 'https://uottawampsp.com/',
+      title: 'Ruby Dev.',
       caption: 'A software development company',
     },
   ];
@@ -68,7 +76,10 @@ const Portfolio = () => {
             >
               {' '}
               <Image loading='lazy' src={image.img} />
-              <p className='portfolio-image-caption'>{image.caption}</p>
+              <div className='portfolio-image-caption'>
+                <h3>{image.title}</h3>
+                <p>{image.caption}</p>
+              </div>
             </Link>
           ))}
         </SimpleGrid>
