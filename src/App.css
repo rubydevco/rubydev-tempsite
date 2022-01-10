@@ -70,3 +70,11 @@ hr {
   text-align: center;
   font-family: 'Oswald', sans-serif;
 }
+
+/* All the CSS for the portfolio */
+
+.portfolio h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2.5vh;
+}
