@@ -31,7 +31,7 @@ const PriceBlocks = () => {
   };
   return (
     <div>
-      <Grid templateColumns='repeat(3, 1fr)' gap={1}>
+      <Grid templateColumns='repeat(3, 1fr)' gap={10}>
         <Box mt={8}>
           <PriceBlock type={basicSite} />
         </Box>
