@@ -15,6 +15,9 @@ hr {
 
 .menu-link {
   background-color: black;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
   padding-right: 6px;
   padding-top: 2px;
   margin-bottom: 12px;
@@ -36,10 +39,19 @@ hr {
 }
 
 .prices-title {
-  font-size: 2rem;
-  margin-bottom: 7vh;
+  font-size: 2.5rem;
+  margin: 0px 6vw;
+  margin-bottom: 2vh;
   text-align: center;
   font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+}
+
+.prices-title-caption {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 7vh;
 }
 
 .price-block-title-box {
