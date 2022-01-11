@@ -2,7 +2,13 @@ import { Box, Button, Center } from '@chakra-ui/react';
 const PriceBlock = ({ type }) => {
   return (
     <div>
-      <Box bg='black' w='100%' p={4} className='price-block-title-box'>
+      <Box
+        bg='black'
+        w='100%'
+        p={4}
+        className='price-block-title-box'
+        color='white'
+      >
         <div className='price-block-title'>{type.title}</div>
       </Box>
       <Box bg='gray.200' color='black'>
@@ -19,7 +25,13 @@ const PriceBlock = ({ type }) => {
           <hr style={{ background: 'black' }} />
         </div>
       </Box>
-      <Box bg='black' w='100%' p={4} className='price-block-price-box'>
+      <Box
+        bg='black'
+        w='100%'
+        p={4}
+        className='price-block-price-box'
+        color='white'
+      >
         <div className='price-block-price'>
           <h2>{type.price}</h2>
         </div>
