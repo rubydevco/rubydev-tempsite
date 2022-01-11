@@ -1,16 +1,22 @@
-import { Box, Button, Center } from '@chakra-ui/react';
+import { useState, useRef } from 'react';
+import { Box, Button, Center, Link, useDisclosure } from '@chakra-ui/react';
+import Slider from './Slider';
 const PriceBlock = ({ type }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef();
   return (
     <div>
-      <Box
-        bg='black'
-        w='100%'
-        p={4}
-        className='price-block-title-box'
-        color='white'
-      >
-        <div className='price-block-title'>{type.title}</div>
-      </Box>
+      <Link link={btnRef} onClick={onOpen}>
+        <Box
+          bg='black'
+          w='100%'
+          p={4}
+          className='price-block-title-box'
+          color='white'
+        >
+          <div className='price-block-title'>{type.title}</div>
+        </Box>
+      </Link>
       <Box bg='gray.200' color='black'>
         <div className='price-block-text'>
           <p className='price-block-point'>{type.point1}</p>
@@ -51,6 +57,7 @@ const PriceBlock = ({ type }) => {
           </Center>
         </div>
       </Box>
+      <Slider isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
     </div>
   );
 };
