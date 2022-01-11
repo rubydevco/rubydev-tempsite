@@ -1,9 +1,17 @@
-import { Center, Grid, GridItem, Box } from '@chakra-ui/react';
+import { Center, Grid, GridItem, Box, Button } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import MenuLink from './MenuLink';
-
+import { useColorMode } from '@chakra-ui/react';
 const Menu = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  var darkModeText = 'Dark Mode';
+  if (colorMode === 'dark') {
+    darkModeText = 'Light Mode';
+  } else {
+    darkModeText = 'Dark Mode';
+  }
+
   return (
     <section className='menu'>
       <Grid templateColumns='repeat(10, 1fr)' gap={1}>
@@ -31,7 +39,12 @@ const Menu = () => {
               >
                 <MenuLink text='About Us' />
               </Link>
-              <MenuLink text='Dark Mode' />
+              <Link
+                onClick={toggleColorMode}
+                style={{ textDecoration: 'none' }}
+              >
+                <MenuLink text={darkModeText} />
+              </Link>
             </Box>
           </Center>
         </GridItem>

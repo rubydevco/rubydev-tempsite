@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider>
       <Routes />
     </ChakraProvider>
   );
