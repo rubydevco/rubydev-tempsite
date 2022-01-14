@@ -42,16 +42,13 @@ const CanvasMenu = () => {
       }
 
       bounce() {
-        if (
-          this.pos.x <= 0 + this.radius ||
-          this.pos.x >= canvas.width - this.radius
-        )
-          this.vel.x *= -1;
-        if (
-          this.pos.y <= 0 + this.radius ||
-          this.pos.y >= canvas.height - this.radius
-        )
-          this.vel.y *= -1;
+        if ((this.pos.x <= 0 + this.radius && this.vel.x !== 1) || (this.pos.x >= canvas.width - this.radius && this.vel.x !== -1)) this.vel.x *= -1;
+        if ((this.pos.y <= 0 + this.radius && this.vel.y !== 1) || (this.pos.y >= canvas.height - this.radius && this.vel.y !== -1)) this.vel.y *= -1;
+
+        if (this.pos.x < 0) this.vel.x = 1;
+        if (this.pos.x > canvas.width) this.vel.x = -1;
+        if (this.pos.y < 0) this.vel.y = 1;
+        if (this.pos.y > canvas.height) this.vel.y = -1;
       }
 
       repel() {
@@ -121,9 +118,9 @@ const CanvasMenu = () => {
 
     const agents = [];
 
-    test();
+    main();
 
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < concentration(); i++) {
       const x = Math.random() * canvas.width;
       const y = Math.random() * canvas.height;
       const speedX = getRndInteger(0.1, 2);
@@ -132,7 +129,7 @@ const CanvasMenu = () => {
       agents.push(new Agent(x, y, speedX, speedY));
     }
 
-    function test() {
+    function main() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       lines();
@@ -145,7 +142,7 @@ const CanvasMenu = () => {
         agent.bounce();
         agent.repel();
       });
-      requestAnimationFrame(test);
+      requestAnimationFrame(main);
 
       function lines() {
         const maxLineWidth = 12;
@@ -176,6 +173,13 @@ const CanvasMenu = () => {
     function getRndInteger(min, max) {
       return Math.random() * (max - min) + min; // remove 1??
     }
+
+    function concentration() {
+      let circles = Math.floor(canvas.width * canvas.height * 0.000025);
+      if (circles < 10) return 10;
+      if (circles > 40) return 40;
+      else return circles;
+  }
 
     //makese screen size dynamic
     function fitToContainer() {
