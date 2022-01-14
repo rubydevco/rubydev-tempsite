@@ -98,11 +98,11 @@ const Portfolio = () => {
 
   return (
     <div className='portfolio'>
-      <Box m={8}>
+      <Box mx={8}>
         <h2>Our Recent Work</h2>
 
         <SimpleGrid
-          minChildWidth={{ base: '50vw', md: '35vw', lg: '35vw' }}
+          minChildWidth={{ base: '50vw', md: '15vw', lg: '30vw' }}
           spacing={2}
         >
           {images.map((image, key) => (
