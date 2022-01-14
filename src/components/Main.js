@@ -11,7 +11,9 @@ import AboutUs from './AboutUs/AboutUs';
 
 const Main = () => {
   const [page, setPage] = useState('');
+  const [menuColumnWidth, setMenuColumnWidth] = useState(4);
   const changePage = (newPage) => {
+    setMenuColumnWidth(3);
     setPage(newPage);
   };
   return (
@@ -21,14 +23,22 @@ const Main = () => {
       </div>
       <section className='menu'>
         <Grid templateColumns='repeat(10, 1fr)'>
-          <GridItem colSpan={{ base: 10, md: 3, lg: 3 }}>
+          <GridItem
+            colSpan={{ base: 10, md: menuColumnWidth, lg: menuColumnWidth }}
+          >
             <Center>
               <Box bg='black' w='70%' p={4} color='white'>
                 <Menu style={{ zIndex: '1' }} changePage={changePage} />
               </Box>
             </Center>
           </GridItem>
-          <GridItem colSpan={{ base: 10, md: 7, lg: 7 }}>
+          <GridItem
+            colSpan={{
+              base: 10,
+              md: 10 - menuColumnWidth,
+              lg: 10 - menuColumnWidth,
+            }}
+          >
             {page === 'getting-started' && <GettingStarted />}
             {page === 'portfolio' && <Portfolio />}
             {page === 'about-us' && <AboutUs />}
