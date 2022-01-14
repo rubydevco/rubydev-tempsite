@@ -7,6 +7,7 @@ import CanvasMenu from '../js/CanvasMenu';
 
 import GettingStarted from './GettingStarted/GettingStarted';
 import Portfolio from './Portfolio/Portfolio';
+import AboutUs from './AboutUs/AboutUs';
 
 const Main = () => {
   const [page, setPage] = useState('');
@@ -30,6 +31,7 @@ const Main = () => {
           <GridItem colSpan={{ base: 10, md: 7, lg: 7 }}>
             {page === 'getting-started' && <GettingStarted />}
             {page === 'portfolio' && <Portfolio />}
+            {page === 'about-us' && <AboutUs />}
           </GridItem>
         </Grid>
       </section>
