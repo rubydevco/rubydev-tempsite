@@ -1,4 +1,4 @@
-import { Center, Grid, GridItem, Box, Button } from '@chakra-ui/react';
+import { Center, Grid, GridItem, Box } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import MenuLink from './MenuLink';
