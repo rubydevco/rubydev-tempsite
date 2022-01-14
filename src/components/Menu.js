@@ -1,5 +1,4 @@
 import { Link } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
 import MenuLink from './MenuLink';
 import { useColorMode } from '@chakra-ui/react';
 const Menu = ({ changePage }) => {
