@@ -5,11 +5,6 @@ hr {
   background: white;
 }
 
-.canvas {
-  overflow: hidden !important;
-  display: none;
-}
-
 /* All the CSS for the home page */
 
 .menu {
@@ -28,7 +23,7 @@ hr {
   margin-bottom: 12px;
   text-align: right;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .menu-link:hover {
