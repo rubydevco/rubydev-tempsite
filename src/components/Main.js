@@ -1,6 +1,9 @@
+import { Grid, GridItem, Center, Box } from '@chakra-ui/react';
+
 import Menu from './Menu';
 import CanvasMenu from '../js/CanvasMenu';
-import { Grid, GridItem, Center, Box } from '@chakra-ui/react';
+
+import GettingStarted from './GettingStarted/GettingStarted';
 
 const Main = () => {
   return (
@@ -9,13 +12,16 @@ const Main = () => {
         <CanvasMenu />
       </div>
       <section className='menu'>
-        <Grid templateColumns='repeat(10, 1fr)' gap={1}>
-          <GridItem colSpan={{ base: 10, md: 4, lg: 4 }}>
-            <Center m={4}>
+        <Grid templateColumns='repeat(10, 1fr)'>
+          <GridItem colSpan={{ base: 10, md: 3, lg: 3 }}>
+            <Center>
               <Box bg='black' w='70%' p={4} color='white'>
                 <Menu style={{ zIndex: '1' }} />
               </Box>
             </Center>
+          </GridItem>
+          <GridItem colSpan={{ base: 10, md: 7, lg: 7 }}>
+            <GettingStarted />
           </GridItem>
         </Grid>
       </section>

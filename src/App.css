@@ -5,12 +5,17 @@ hr {
   background: white;
 }
 
+.canvas {
+  overflow: hidden !important;
+  display: none;
+}
+
 /* All the CSS for the home page */
 
 .menu {
   position: absolute;
-  top: 20vh !important;
-  width: 100vw;
+  top: 15vh !important;
+  width: 100%;
 }
 
 .menu-link {
@@ -35,12 +40,12 @@ hr {
 /* All the CSS for the pricing/getting started page */
 
 .getting-started {
-  margin: 12vh 16vw;
+  margin: 0 2vw;
 }
 
 .prices-title {
-  font-size: 2.5rem;
-  margin: 0px 6vw;
+  font-size: 2.2rem;
+  margin: 0px 0vw;
   margin-bottom: 2vh;
   text-align: center;
   font-family: 'Oswald', sans-serif;
