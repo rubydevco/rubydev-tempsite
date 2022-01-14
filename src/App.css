@@ -9,8 +9,8 @@ hr {
 
 .menu {
   position: absolute;
-  top: 20vh !important;
-  width: 100vw;
+  top: 15vh !important;
+  width: 100%;
 }
 
 .menu-link {
@@ -23,7 +23,7 @@ hr {
   margin-bottom: 12px;
   text-align: right;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .menu-link:hover {
@@ -35,12 +35,12 @@ hr {
 /* All the CSS for the pricing/getting started page */
 
 .getting-started {
-  margin: 12vh 16vw;
+  margin: 0 2vw;
 }
 
 .prices-title {
-  font-size: 2.5rem;
-  margin: 0px 6vw;
+  font-size: 2.2rem;
+  margin: 0px 0vw;
   margin-bottom: 2vh;
   text-align: center;
   font-family: 'Oswald', sans-serif;

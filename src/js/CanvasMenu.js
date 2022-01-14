@@ -188,7 +188,7 @@ const CanvasMenu = () => {
 
   return (
     <div>
-      <canvas ref={ref} style={{ height: '100vh' }}></canvas>
+      <canvas ref={ref}></canvas>
     </div>
   );
 };
