@@ -6,7 +6,7 @@ const PriceBlock = ({ type }) => {
   const btnRef = useRef();
   return (
     <div>
-      <Link link={btnRef} onClick={onOpen}>
+      <Link link={btnRef} onClick={onOpen} style={{ textDecoration: 'none' }}>
         <Box
           bg='black'
           w='100%'
