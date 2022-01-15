@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
 import { SimpleGrid, Link, Box } from '@chakra-ui/react';
-import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
 
 import merci from '../../images/portfolio/merci.jpg';
 import thirtyfivemm from '../../images/portfolio/35mm.jpg';
@@ -81,20 +79,6 @@ const Portfolio = () => {
       loaded: false,
     },
   ];
-
-  const setLoading = (id) => {
-    images.map((image) => {
-      if (image.id === id) {
-        image.loaded = true;
-      }
-    });
-  };
-
-  useEffect(() => {
-    images.map((image) => {
-      console.log('loading: ' + image.loaded);
-    });
-  }, []);
 
   return (
     <div className='portfolio'>
