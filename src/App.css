@@ -107,3 +107,38 @@ hr {
   top: 50%;
   left: 50%;
 }
+
+/* ABOUT US */
+.about {
+  text-align: center;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 30px;
+}
+.about-pic {
+  display: inline-block;
+  text-align: center;
+  margin: 15px 15px;
+}
+.about a {
+  font-style: italic;
+}
+.about h2 {
+  font-size: 32pt;
+  opacity: 1;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+}
+.about h3 {
+  font-size: 18pt;
+}
+.about h4 {
+  font-size: 16pt;
+  font-style: bold;
+}
+.about-text {
+  text-align: left;
+}
+.about-text p {
+  margin-left: 25px;
+}
