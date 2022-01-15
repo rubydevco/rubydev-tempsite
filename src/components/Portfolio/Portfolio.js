@@ -73,7 +73,7 @@ const Portfolio = () => {
     {
       id: 7,
       img: ruby,
-      link: 'https://uottawampsp.com/',
+      link: 'https://rubydev.ca/',
       title: 'Ruby Dev.',
       caption: 'A software development company',
       loaded: false,
