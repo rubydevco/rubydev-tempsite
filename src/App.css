@@ -32,6 +32,11 @@ hr {
   padding-bottom: 30px;
 }
 
+/* Transparent background for pages */
+.getting-started, .portfolio, .about {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* All the CSS for the pricing/getting started page */
 
 .getting-started {
@@ -112,7 +117,6 @@ hr {
 .about {
   text-align: center;
   max-width: 800px;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 30px;
 }
 .about-pic {
