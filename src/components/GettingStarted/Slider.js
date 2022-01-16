@@ -24,9 +24,22 @@ const Slider = ({ isOpen, onClose, btnRef }) => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>Basic Website</DrawerHeader>
 
           <DrawerBody>
+            <h2
+              style={{
+                textAlign: 'justify',
+                wordBreak: 'break-all',
+                wordWrap: 'break-word',
+                hyphens: 'auto',
+              }}
+            >
+              Lorem ipsum dolor, <b>sit </b> amet consectetur adipisicing elit.
+              Doloremque ducimus sed debitis et deserunt nulla nemo quod rem
+              cupiditate provident at, quisquam in necessitatibus. Omnis veniam
+              numquam vero. Sequi, possimus?
+            </h2>
             <Text my={4}>Your Name</Text>
             <Input placeholder='Type here...' />
             <Text my={4}>Your Email</Text>
