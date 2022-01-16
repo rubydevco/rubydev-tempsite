@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { Box, Button, Center, Link, useDisclosure } from '@chakra-ui/react';
+
 import Slider from './Slider';
 const PriceBlock = ({ type }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

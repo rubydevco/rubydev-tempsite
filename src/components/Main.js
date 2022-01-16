@@ -21,7 +21,7 @@ const Main = () => {
 
   const transparentBG = useColorModeValue(
     'rgba(255,255,255,0.8)',
-    'rgba(0,0,0,0.8)'
+    'rgba(0,0,0,0.6)'
   );
   return (
     <>
