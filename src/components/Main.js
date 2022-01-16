@@ -9,6 +9,8 @@ import GettingStarted from './GettingStarted/GettingStarted';
 import Portfolio from './Portfolio/Portfolio';
 import AboutUs from './AboutUs/AboutUs';
 
+import { useColorModeValue } from '@chakra-ui/react';
+
 const Main = () => {
   const [page, setPage] = useState('');
   const [menuColumnWidth, setMenuColumnWidth] = useState(4);
@@ -16,6 +18,11 @@ const Main = () => {
     setMenuColumnWidth(3);
     setPage(newPage);
   };
+
+  const transparentBG = useColorModeValue(
+    'rgba(255,255,255,0.8)',
+    'rgba(0,0,0,0.8)'
+  );
   return (
     <>
       <div
@@ -46,9 +53,11 @@ const Main = () => {
               lg: 10 - menuColumnWidth,
             }}
           >
-            {page === 'getting-started' && <GettingStarted />}
-            {page === 'portfolio' && <Portfolio />}
-            {page === 'about-us' && <AboutUs />}
+            <Box bg={transparentBG}>
+              {page === 'getting-started' && <GettingStarted />}
+              {page === 'portfolio' && <Portfolio />}
+              {page === 'about-us' && <AboutUs />}
+            </Box>
           </GridItem>
         </Grid>
       </section>
