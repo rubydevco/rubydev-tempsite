@@ -38,7 +38,7 @@ const Slider = ({ isOpen, onClose, btnRef, type }) => {
     });
   };
   return (
-    <>
+    <div className='slider'>
       <Drawer
         isOpen={isOpen}
         placement='left'
@@ -46,9 +46,11 @@ const Slider = ({ isOpen, onClose, btnRef, type }) => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent className='slider-content'>
           <DrawerCloseButton />
-          <DrawerHeader>{type.title} SITE</DrawerHeader>
+          <DrawerHeader className='slider-title'>
+            {type.title} SITE
+          </DrawerHeader>
 
           <DrawerBody>
             <h2
@@ -57,10 +59,18 @@ const Slider = ({ isOpen, onClose, btnRef, type }) => {
                 wordWrap: 'break-word',
                 hyphens: 'auto',
               }}
+              className='slider-description'
             >
               {type.description}
             </h2>
-            <form id='form' method='POST' onSubmit={onSubmit}>
+            <br />
+            <p>Fill out the form below to get in touch. </p>
+            <form
+              id='form'
+              method='POST'
+              onSubmit={onSubmit}
+              className='slider-form'
+            >
               <FormControl isRequired>
                 <FormLabel my={4}>Your Name</FormLabel>
                 <Input
@@ -115,7 +125,7 @@ const Slider = ({ isOpen, onClose, btnRef, type }) => {
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
-    </>
+    </div>
   );
 };
 

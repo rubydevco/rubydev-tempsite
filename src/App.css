@@ -83,6 +83,17 @@ hr {
   font-family: 'Oswald', sans-serif;
 }
 
+/*CSS for the slider */
+
+.slider-content {
+  font-family: 'Roboto', sans-serif;
+  color: red;
+}
+
+.slider-title {
+  font-family: 'Oswald', sans-serif;
+}
+
 /* All the CSS for the portfolio */
 
 .portfolio h2 {
