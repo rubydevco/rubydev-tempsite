@@ -1,5 +1,15 @@
 import { useRef } from 'react';
-import { Box, Button, Center, Link, useDisclosure } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Center,
+  Link,
+  useDisclosure,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+} from '@chakra-ui/react';
 
 import Slider from './Slider';
 const PriceBlock = ({ type }) => {
@@ -20,7 +30,11 @@ const PriceBlock = ({ type }) => {
       </Link>
       <Box bg='gray.200' color='black'>
         <div className='price-block-text'>
-          <p className='price-block-point'>{type.point1}</p>
+          {/* <div className='price-block-point'>
+            {' '}
+            <p>{type.point1}</p>
+            <p>{type.point1}</p>
+          </div>
           <hr style={{ background: 'black' }} />
           <p className='price-block-point'>{type.point2}</p>
           <hr style={{ background: 'black' }} />
@@ -29,7 +43,58 @@ const PriceBlock = ({ type }) => {
           <p className='price-block-point'>{type.point4}</p>
           <hr style={{ background: 'black' }} />
           <p className='price-block-point'>{type.point5}</p>
-          <hr style={{ background: 'black' }} />
+          <hr style={{ background: 'black' }} /> */}
+
+          <Accordion allowToggle>
+            <AccordionItem>
+              <AccordionButton
+                p={0}
+                _expanded={{ bg: '#1a202c', color: 'white' }}
+              >
+                <Box flex='1' textAlign='left'>
+                  <p className='price-block-point'>{type.point1}</p>
+                  <hr style={{ background: 'black' }} />
+                </Box>
+              </AccordionButton>
+              <AccordionPanel>{type.point1Description}</AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionButton p={0}>
+                <Box flex='1' textAlign='left'>
+                  <p className='price-block-point'>{type.point2}</p>
+                  <hr style={{ background: 'black' }} />
+                </Box>
+              </AccordionButton>
+              <AccordionPanel>{type.point2Description}</AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionButton p={0}>
+                <Box flex='1' textAlign='left'>
+                  <p className='price-block-point'>{type.point3}</p>
+                  <hr style={{ background: 'black' }} />
+                </Box>
+              </AccordionButton>
+              <AccordionPanel>{type.point3Description}</AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionButton p={0}>
+                <Box flex='1' textAlign='left'>
+                  <p className='price-block-point'>{type.point4}</p>
+                  <hr style={{ background: 'black' }} />
+                </Box>
+              </AccordionButton>
+              <AccordionPanel>{type.point4Description}</AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionButton p={0}>
+                <Box flex='1' textAlign='left'>
+                  <p className='price-block-point'>{type.point5}</p>
+                  <hr style={{ background: 'black' }} />
+                </Box>
+              </AccordionButton>
+              <AccordionPanel>{type.point5Description}</AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </div>
       </Box>
       <Box
