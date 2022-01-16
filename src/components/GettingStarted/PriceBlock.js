@@ -58,7 +58,7 @@ const PriceBlock = ({ type }) => {
           </Center>
         </div>
       </Box>
-      <Slider isOpen={isOpen} onClose={onClose} btnR={btnRef} />
+      <Slider isOpen={isOpen} onClose={onClose} btnR={btnRef} type={type} />
     </div>
   );
 };

@@ -12,7 +12,7 @@ import {
   Select,
 } from '@chakra-ui/react';
 
-const Slider = ({ isOpen, onClose, btnRef }) => {
+const Slider = ({ isOpen, onClose, btnRef, type }) => {
   return (
     <>
       <Drawer
@@ -24,30 +24,34 @@ const Slider = ({ isOpen, onClose, btnRef }) => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Basic Website</DrawerHeader>
+          <DrawerHeader>{type.title} SITE</DrawerHeader>
 
           <DrawerBody>
             <h2
               style={{
                 textAlign: 'justify',
-                wordBreak: 'break-all',
                 wordWrap: 'break-word',
                 hyphens: 'auto',
               }}
             >
-              Lorem ipsum dolor, <b>sit </b> amet consectetur adipisicing elit.
-              Doloremque ducimus sed debitis et deserunt nulla nemo quod rem
-              cupiditate provident at, quisquam in necessitatibus. Omnis veniam
-              numquam vero. Sequi, possimus?
+              {type.description}
             </h2>
             <Text my={4}>Your Name</Text>
             <Input placeholder='Type here...' />
             <Text my={4}>Your Email</Text>
             <Input placeholder='Type here...' />
             <Select my={4}>
-              <option value='option1'>Option 1</option>
-              <option value='option2'>Option 2</option>
-              <option value='option3'>Option 3</option>
+              <option value={type.title}>{type.title}</option>
+              <option
+                value={type.title === 'PROFESSIONAL' ? 'BASIC' : 'PROFESSIONAL'}
+              >
+                {type.title === 'PROFESSIONAL' ? 'BASIC' : 'PROFESSIONAL'}
+              </option>
+              <option
+                value={type.title === 'E-COMMERCE' ? 'BASIC' : 'E-COMMERCE'}
+              >
+                {type.title === 'E-COMMERCE' ? 'BASIC' : 'E-COMMERCE'}
+              </option>
             </Select>
           </DrawerBody>
 
