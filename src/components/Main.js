@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Grid, GridItem, Center, Box } from '@chakra-ui/react';
 
-import Menu from './Menu';
+import Menu from './Menu/Menu';
 import CanvasMenu from '../js/CanvasMenu';
 
 import GettingStarted from './GettingStarted/GettingStarted';

@@ -1,5 +1,7 @@
 import { Link } from '@chakra-ui/react';
 import MenuLink from './MenuLink';
+import Title from './Title';
+import MenuFooter from './MenuFooter';
 import { useColorMode } from '@chakra-ui/react';
 const Menu = ({ changePage }) => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -11,11 +13,8 @@ const Menu = ({ changePage }) => {
   }
 
   return (
-    <>
-      {/* <Grid templateColumns='repeat(10, 1fr)' gap={1}>
-        <GridItem colSpan={{ base: 10, md: 4, lg: 4 }}> */}
-      {/* <Center m={4}>
-        <Box bg='black' w='70%' p={4} color='white'> */}
+    <div>
+      <Title />
       <Link
         style={{ textDecoration: 'none' }}
         onClick={() => {
@@ -43,11 +42,8 @@ const Menu = ({ changePage }) => {
       <Link onClick={toggleColorMode} style={{ textDecoration: 'none' }}>
         <MenuLink text={darkModeText} />
       </Link>
-      {/* </Box>
-      </Center> */}
-      {/* </GridItem>
-      </Grid> */}
-    </>
+      <MenuFooter />
+    </div>
   );
 };
 
