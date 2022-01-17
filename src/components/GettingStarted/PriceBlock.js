@@ -59,7 +59,10 @@ const PriceBlock = ({ type }) => {
               <AccordionPanel>{type.point1Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
-              <AccordionButton p={0}>
+              <AccordionButton
+                p={0}
+                _expanded={{ bg: '#1a202c', color: 'white' }}
+              >
                 <Box flex='1' textAlign='left'>
                   <p className='price-block-point'>{type.point2}</p>
                   <hr style={{ background: 'black' }} />
@@ -68,7 +71,10 @@ const PriceBlock = ({ type }) => {
               <AccordionPanel>{type.point2Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
-              <AccordionButton p={0}>
+              <AccordionButton
+                p={0}
+                _expanded={{ bg: '#1a202c', color: 'white' }}
+              >
                 <Box flex='1' textAlign='left'>
                   <p className='price-block-point'>{type.point3}</p>
                   <hr style={{ background: 'black' }} />
@@ -77,7 +83,10 @@ const PriceBlock = ({ type }) => {
               <AccordionPanel>{type.point3Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
-              <AccordionButton p={0}>
+              <AccordionButton
+                p={0}
+                _expanded={{ bg: '#1a202c', color: 'white' }}
+              >
                 <Box flex='1' textAlign='left'>
                   <p className='price-block-point'>{type.point4}</p>
                   <hr style={{ background: 'black' }} />
@@ -86,7 +95,10 @@ const PriceBlock = ({ type }) => {
               <AccordionPanel>{type.point4Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
-              <AccordionButton p={0}>
+              <AccordionButton
+                p={0}
+                _expanded={{ bg: '#1a202c', color: 'white' }}
+              >
                 <Box flex='1' textAlign='left'>
                   <p className='price-block-point'>{type.point5}</p>
                   <hr style={{ background: 'black' }} />
