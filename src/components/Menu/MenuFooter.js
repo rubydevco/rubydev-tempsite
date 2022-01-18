@@ -6,7 +6,6 @@ const MenuFooter = () => {
   return (
     <div className='footer'>
       <Link
-<<<<<<< HEAD
         href='https://www.instagram.com/onyxonlinehq/'
         isExternal
         pr={2}
@@ -42,47 +41,6 @@ const MenuFooter = () => {
       </Link>
     </div>
   );
-=======
-              href='https://www.instagram.com/onyxonlinehq/'
-              isExternal
-              pr={2}
-              className='social'
-            >
-              <IconButton
-                size='sm'
-                aria-label='Instagram Link'
-                icon={<FaInstagram />}
-              />
-              </Link>
-
-              <Link
-              href='https://www.facebook.com/ONYXOnlineHQ/'
-              isExternal
-              pr={2}
-              className='social'
-            >
-              <IconButton
-                size='sm'
-                aria-label='Facebook Link'
-                icon={<FaFacebookF />}
-              />
-              </Link>
-
-              <Link
-              href='https://twitter.com/onyxonlinehq'
-              isExternal
-              pr={2}
-              className='social'
-            >
-              <IconButton
-                size='sm'
-                aria-label='Twitter Link'
-                icon={<FaTwitter />}
-              />
-              </Link>
-    </div>
-    );
->>>>>>> 6a6048b15b577d914072148e77b7daef5ad1e003
 };
 
 export default MenuFooter;
