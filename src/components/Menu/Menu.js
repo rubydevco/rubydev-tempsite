@@ -14,7 +14,15 @@ const Menu = ({ changePage }) => {
 
   return (
     <div>
-      <MenuTitle />
+      {' '}
+      <Link
+        style={{ textDecoration: 'none' }}
+        onClick={() => {
+          changePage('home');
+        }}
+      >
+        <MenuTitle />
+      </Link>
       <Link
         style={{ textDecoration: 'none' }}
         onClick={() => {

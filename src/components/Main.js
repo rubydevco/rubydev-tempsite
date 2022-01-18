@@ -15,7 +15,13 @@ const Main = () => {
   const [page, setPage] = useState('');
   const [menuColumnWidth, setMenuColumnWidth] = useState(4);
   const changePage = (newPage) => {
-    setMenuColumnWidth(3);
+    console.log('ugh');
+    if (newPage === 'home') {
+      console.log(newPage);
+      setMenuColumnWidth(4);
+    } else {
+      setMenuColumnWidth(3);
+    }
     setPage(newPage);
   };
 

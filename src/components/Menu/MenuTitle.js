@@ -1,17 +1,11 @@
-import { Link } from '@chakra-ui/react';
 import logo from '../../images/OnyxOnline+logo+text+2.png';
 
-const Title = ( {changePage }) => {
-  return <div className='title'>
-    <Link 
-      onClick={() => {
-          changePage('');
-        }}
-      >
-    <img src={logo} alt='logo'></img>
-    
-    </Link>
-  </div>;
+const Title = () => {
+  return (
+    <div className='title'>
+      <img src={logo} alt='logo'></img>
+    </div>
+  );
 };
 
 export default Title;
