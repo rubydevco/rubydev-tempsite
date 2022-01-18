@@ -149,6 +149,7 @@ hr {
   padding: 15px 15px;
   width: 45%;
   max-width: 400px;
+  vertical-align: top;
 }
 .about-pic img {
   margin: auto;
