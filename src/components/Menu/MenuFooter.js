@@ -15,6 +15,8 @@ const MenuFooter = () => {
           size='sm'
           aria-label='Instagram Link'
           icon={<FaInstagram />}
+          bg='gray.800'
+          color='white'
         />
       </Link>
 
@@ -28,6 +30,8 @@ const MenuFooter = () => {
           size='sm'
           aria-label='Facebook Link'
           icon={<FaFacebookF />}
+          bg='gray.800'
+          color='white'
         />
       </Link>
 
@@ -37,7 +41,13 @@ const MenuFooter = () => {
         pr={2}
         className='social'
       >
-        <IconButton size='sm' aria-label='Twitter Link' icon={<FaTwitter />} />
+        <IconButton
+          size='sm'
+          aria-label='Twitter Link'
+          icon={<FaTwitter />}
+          bg='gray.800'
+          color='white'
+        />
       </Link>
     </div>
   );
