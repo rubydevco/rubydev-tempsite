@@ -28,6 +28,7 @@ const Menu = ({ changePage }) => {
         onClick={() => {
           changePage('getting-started');
         }}
+        href="#getting-started"
       >
         <MenuLink text='Get Started' />
       </Link>
