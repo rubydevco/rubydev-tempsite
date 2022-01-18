@@ -81,7 +81,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='portfolio'>
+    <div className='portfolio' id='portfolio'>
       <Box mx={8}>
         <h2>Our Recent Work</h2>
 
