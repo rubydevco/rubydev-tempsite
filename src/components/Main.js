@@ -47,7 +47,12 @@ const Main = () => {
             colSpan={{ base: 10, md: menuColumnWidth, lg: menuColumnWidth }}
           >
             <Center>
-              <Box bg='rgba(0,0,0,0.9)' w='70%' p={4} color='white'>
+              <Box
+                bg='rgba(0,0,0,0.9)'
+                w={{ base: '100%', md: '70%', lg: '70%' }}
+                p={4}
+                color='white'
+              >
                 <Menu style={{ zIndex: '1' }} changePage={changePage} />
               </Box>
             </Center>
