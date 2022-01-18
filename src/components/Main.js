@@ -49,7 +49,7 @@ const Main = () => {
             <Center>
               <Box
                 bg='rgba(0,0,0,0.9)'
-                w={{ base: '100%', md: '70%', lg: '70%' }}
+                w={{ base: '70%', md: '70%', lg: '70%' }}
                 p={4}
                 color='white'
               >
@@ -57,6 +57,7 @@ const Main = () => {
               </Box>
             </Center>
           </GridItem>
+
           <GridItem
             colSpan={{
               base: 10,
