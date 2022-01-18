@@ -1,6 +1,6 @@
 import { Link } from '@chakra-ui/react';
 import MenuLink from './MenuLink';
-import Title from './Title';
+import MenuTitle from './MenuTitle';
 import MenuFooter from './MenuFooter';
 import { useColorMode } from '@chakra-ui/react';
 const Menu = ({ changePage }) => {
@@ -14,7 +14,7 @@ const Menu = ({ changePage }) => {
 
   return (
     <div>
-      <Title />
+      <MenuTitle />
       <Link
         style={{ textDecoration: 'none' }}
         onClick={() => {
