@@ -14,7 +14,7 @@ hr {
 }
 
 .menu-link {
-  background-color: black;
+  /*background-color: black;*/
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
@@ -30,6 +30,24 @@ hr {
   background-color: white;
   color: black;
   padding-bottom: 30px;
+}
+
+.title {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+.title img {
+  filter: invert(1);
+}
+
+.footer {
+  margin: 0 auto;
+}
+.footer .social {
+  color: white;
+
+  background-color: black;
+  display: inline-block;
 }
 
 /* All the CSS for the pricing/getting started page */
@@ -128,7 +146,12 @@ hr {
 .about-pic {
   display: inline-block;
   text-align: center;
-  margin: 15px 15px;
+  padding: 15px 15px;
+  width: 45%;
+  max-width: 400px;
+}
+.about-pic img {
+  margin: auto;
 }
 .about a {
   font-style: italic;
