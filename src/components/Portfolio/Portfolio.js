@@ -94,6 +94,7 @@ const Portfolio = () => {
               href={image.link}
               isExternal
               style={{ textDecoration: 'none' }}
+              key={key}
             >
               <Sites site={image}></Sites>
               <div className='portfolio-image-caption'>

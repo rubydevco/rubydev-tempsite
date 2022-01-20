@@ -15,7 +15,6 @@ const Main = () => {
   const [page, setPage] = useState('');
   const [menuColumnWidth, setMenuColumnWidth] = useState(4);
   const changePage = (newPage) => {
-    console.log('ugh');
     if (newPage === 'home') {
       console.log(newPage);
       setMenuColumnWidth(4);
@@ -29,6 +28,7 @@ const Main = () => {
     'rgba(255,255,255,0.8)',
     'rgba(0,0,0,0.6)'
   );
+
   return (
     <>
       <div
