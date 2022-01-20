@@ -65,7 +65,7 @@ const Main = () => {
               lg: 10 - menuColumnWidth,
             }}
           >
-            <Box bg={transparentBG}>
+            <Box bg={transparentBG} mr={{ base: '0', md: '10', lg: '10' }}>
               {page === 'getting-started' && <GettingStarted />}
               {page === 'portfolio' && <Portfolio />}
               {page === 'about-us' && <AboutUs />}
