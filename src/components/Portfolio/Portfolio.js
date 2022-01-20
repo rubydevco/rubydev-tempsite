@@ -1,13 +1,13 @@
 import { SimpleGrid, Link, Box } from '@chakra-ui/react';
 
-import merci from '../../images/portfolio/merci.jpg';
-import thirtyfivemm from '../../images/portfolio/35mm.jpg';
-import cvuo from '../../images/portfolio/cvuo.jpg';
-import designleague from '../../images/portfolio/designleague.jpg';
-import mess from '../../images/portfolio/mess.jpg';
-import mpsp from '../../images/portfolio/mpsp.jpg';
-import ruby from '../../images/portfolio/ruby.jpg';
-import thatmakergirl from '../../images/portfolio/thatmakergirl.jpg';
+import merci from '../../images/portfolio-compress/merci.jpg';
+import thirtyfivemm from '../../images/portfolio-compress/35mm.jpg';
+import cvuo from '../../images/portfolio-compress/cvuo.jpg';
+import designleague from '../../images/portfolio-compress/designleague.jpg';
+import mess from '../../images/portfolio-compress/mess.jpg';
+import mpsp from '../../images/portfolio-compress/mpsp.jpg';
+import ruby from '../../images/portfolio-compress/ruby.jpg';
+import thatmakergirl from '../../images/portfolio-compress/thatmakergirl.jpg';
 
 import Sites from './Sites';
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
       img: merci,
       link: 'https://www.mercicanada.org/',
       title: 'MERCI',
-      caption: 'idk what this site does',
+      caption: 'A philanthropic University club',
       loaded: false,
     },
     {

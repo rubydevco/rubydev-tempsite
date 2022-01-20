@@ -46,11 +46,13 @@ hr {
 
 .footer {
   margin: 0 auto;
+  width: 120px;
 }
 .footer .social {
   color: white;
+  text-align: center;
 
-  background-color: black;
+  background-color: transparent;
   display: inline-block;
 }
 
