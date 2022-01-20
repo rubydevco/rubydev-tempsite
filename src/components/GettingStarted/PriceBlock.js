@@ -49,14 +49,14 @@ const PriceBlock = ({ type }) => {
             <AccordionItem>
               <AccordionButton
                 p={0}
-                _expanded={{ bg: '#1a202c', color: 'white' }}
+                _expanded={{ bg: '#1a202c', color: 'white'}}
               >
                 <Box flex='1' textAlign='left'>
                   <p className='price-block-point'>{type.point1}</p>
                   <hr style={{ background: 'black' }} />
                 </Box>
               </AccordionButton>
-              <AccordionPanel>{type.point1Description}</AccordionPanel>
+              <AccordionPanel style={{ borderBottom: '2px solid black' }}>{type.point1Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <AccordionButton
@@ -68,7 +68,7 @@ const PriceBlock = ({ type }) => {
                   <hr style={{ background: 'black' }} />
                 </Box>
               </AccordionButton>
-              <AccordionPanel>{type.point2Description}</AccordionPanel>
+              <AccordionPanel style={{ borderBottom: '2px solid black' }}>{type.point2Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <AccordionButton
@@ -80,7 +80,7 @@ const PriceBlock = ({ type }) => {
                   <hr style={{ background: 'black' }} />
                 </Box>
               </AccordionButton>
-              <AccordionPanel>{type.point3Description}</AccordionPanel>
+              <AccordionPanel style={{ borderBottom: '2px solid black' }}>{type.point3Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <AccordionButton
@@ -92,7 +92,7 @@ const PriceBlock = ({ type }) => {
                   <hr style={{ background: 'black' }} />
                 </Box>
               </AccordionButton>
-              <AccordionPanel>{type.point4Description}</AccordionPanel>
+              <AccordionPanel style={{ borderBottom: '2px solid black' }}>{type.point4Description}</AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <AccordionButton
@@ -104,7 +104,7 @@ const PriceBlock = ({ type }) => {
                   <hr style={{ background: 'black' }} />
                 </Box>
               </AccordionButton>
-              <AccordionPanel>{type.point5Description}</AccordionPanel>
+              <AccordionPanel style={{ borderBottom: '2px solid black' }}>{type.point5Description}</AccordionPanel>
             </AccordionItem>
           </Accordion>
         </div>
