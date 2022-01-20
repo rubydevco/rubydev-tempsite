@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -46,7 +46,6 @@ hr {
 
 .footer {
   margin: 0 auto;
-  width: 120px;
 }
 .footer .social {
   color: white;
