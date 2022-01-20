@@ -8,7 +8,7 @@ const PriceBlocks = () => {
       "Get a simple and elegant website for your organization to let visitors know what you're all about, for a price that you can afford.",
     point1: 'Simple Website',
     point1Description:
-      'Simplicity is the ultimate sophistication. Get a no nonesense beautiful website to represent you and your business.',
+      'Simplicity is the ultimate sophistication. Get a no nonsense beautiful website to represent you and your business.',
     point2: 'Fast Loading',
     point2Description:
       'Any visitor to your site will be impressed on how fast each page loads.',
@@ -25,7 +25,7 @@ const PriceBlocks = () => {
   const professionalSite = {
     title: 'PROFESSIONAL',
     description:
-      'Put your organization on the (internet) map with a professional site. Leave your visitors in awe everytime. And be able to update your site without writing code.',
+      'Put your organization on the (internet) map with a professional site. Leave your visitors in awe every time. And be able to update your site without writing code.',
     point1: 'Professional, Fancy & Custom Built For You',
     point1Description:
       "Get a slick website that's built from scratch to match you and your business perfectly.",
