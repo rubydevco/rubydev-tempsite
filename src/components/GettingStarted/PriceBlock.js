@@ -120,21 +120,23 @@ const PriceBlock = ({ type }) => {
           <h2>{type.price}</h2>
         </div>
       </Box>
-      <Box w='100%' pt={2} className='price-block-price-box'>
-        <div className='price-block-contact'>
-          <Center>
-            <Button
-              w='100%'
-              size='lg'
-              variant='solid'
-              color='white'
-              bgColor='black'
-            >
-              Get Started
-            </Button>
-          </Center>
-        </div>
-      </Box>
+      <Link link={btnRef} onClick={onOpen} style={{ textDecoration: 'none' }}>
+        <Box w='100%' pt={2} className='price-block-price-box'>
+          <div className='price-block-contact'>
+            <Center>
+              <Button
+                w='100%'
+                size='lg'
+                variant='solid'
+                color='white'
+                bgColor='black'
+              >
+                Get Started
+              </Button>
+            </Center>
+          </div>
+        </Box>
+      </Link>
       <Slider isOpen={isOpen} onClose={onClose} btnR={btnRef} type={type} />
     </div>
   );
