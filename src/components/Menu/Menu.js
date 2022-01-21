@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Link } from '@chakra-ui/react';
 import MenuLink from './MenuLink';
 import MenuTitle from './MenuTitle';
@@ -13,23 +12,6 @@ const Menu = ({ changePage }) => {
     darkModeText = 'Dark Mode';
   }
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [mobile, setMobile] = useState(true);
-
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-    if (width < 768) {
-      setMobile(true);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
-    return () => {
-      window.removeEventListener('resize', handleWindowSizeChange);
-    };
-  }, []);
-
   return (
     <div>
       {' '}
@@ -41,26 +23,15 @@ const Menu = ({ changePage }) => {
       >
         <MenuTitle />
       </Link>
-      {mobile ? (
-        <Link
-          style={{ textDecoration: 'none' }}
-          onClick={() => {
-            changePage('getting-started');
-          }}
-          href='#getting-started'
-        >
-          <MenuLink text='Get Started' />
-        </Link>
-      ) : (
-        <Link
-          style={{ textDecoration: 'none' }}
-          onClick={() => {
-            changePage('getting-started');
-          }}
-        >
-          <MenuLink text='Get Started' />
-        </Link>
-      )}
+      <Link
+        style={{ textDecoration: 'none' }}
+        onClick={() => {
+          changePage('getting-started');
+        }}
+        href='#getting-started'
+      >
+        <MenuLink text='Get Started' />
+      </Link>
       <Link
         style={{ textDecoration: 'none' }}
         onClick={() => {
