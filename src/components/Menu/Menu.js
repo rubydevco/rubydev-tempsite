@@ -1,5 +1,4 @@
 import { Link } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
 import MenuLink from './MenuLink';
 import MenuTitle from './MenuTitle';
 import MenuFooter from './MenuFooter';

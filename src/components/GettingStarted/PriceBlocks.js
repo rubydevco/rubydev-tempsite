@@ -1,7 +1,21 @@
+import { useState, useEffect } from 'react';
 import PriceBlock from './PriceBlock';
 import { Grid, Box } from '@chakra-ui/react';
 
 const PriceBlocks = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
   const basicSite = {
     title: 'BASIC',
     description:
@@ -61,6 +75,21 @@ const PriceBlocks = () => {
       'Want to sell products online? This one is the one for you.',
     price: '$500',
   };
+  if (width <= 768) {
+    return (
+      <>
+        <Box className='price-block-mobile'>
+          <PriceBlock type={basicSite} />
+        </Box>
+        <Box className='price-block-mobile'>
+          <PriceBlock type={professionalSite} />
+        </Box>
+        <Box className='price-block-mobile'>
+          <PriceBlock type={ecommerceSite} />
+        </Box>
+      </>
+    );
+  }
   return (
     <div>
       <Grid templateColumns='repeat(3, 1fr)' gap={2}>
