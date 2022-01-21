@@ -29,8 +29,7 @@ const Menu = ({ changePage }) => {
         onClick={() => {
           changePage('getting-started');
         }}
-        as={RouterLink}
-        to='/getting-started'
+        href='#getting-started'
       >
         <MenuLink text='Get Started' />
       </Link>
