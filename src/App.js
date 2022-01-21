@@ -1,6 +1,5 @@
 import Routes from './Routes';
 import { ChakraProvider } from '@chakra-ui/react';
-import theme from './theme';
 
 import './App.css';
 
