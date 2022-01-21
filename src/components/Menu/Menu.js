@@ -28,7 +28,7 @@ const Menu = ({ changePage }) => {
         onClick={() => {
           changePage('getting-started');
         }}
-        href='#getting-started'
+        href={{ base: '#getting-started' }}
       >
         <MenuLink text='Get Started' />
       </Link>
@@ -37,7 +37,7 @@ const Menu = ({ changePage }) => {
         onClick={() => {
           changePage('portfolio');
         }}
-        href='#portfolio'
+        href={{ base: '#getting-started' }}
       >
         <MenuLink text='Portfolio' />
       </Link>
@@ -46,7 +46,7 @@ const Menu = ({ changePage }) => {
         onClick={() => {
           changePage('about-us');
         }}
-        href='#about-us'
+        href={{ base: '#getting-started' }}
       >
         <MenuLink text='About Us' />
       </Link>
