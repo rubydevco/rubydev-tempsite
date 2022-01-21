@@ -1,4 +1,5 @@
 import { Link } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 import MenuLink from './MenuLink';
 import MenuTitle from './MenuTitle';
 import MenuFooter from './MenuFooter';
@@ -28,7 +29,8 @@ const Menu = ({ changePage }) => {
         onClick={() => {
           changePage('getting-started');
         }}
-        href='#getting-started'
+        as={RouterLink}
+        to='/getting-started'
       >
         <MenuLink text='Get Started' />
       </Link>
@@ -38,7 +40,6 @@ const Menu = ({ changePage }) => {
           changePage('portfolio');
         }}
         href='#portfolio'
-
       >
         <MenuLink text='Portfolio' />
       </Link>
@@ -48,7 +49,6 @@ const Menu = ({ changePage }) => {
           changePage('about-us');
         }}
         href='#about-us'
-
       >
         <MenuLink text='About Us' />
       </Link>
