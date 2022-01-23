@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Grid, GridItem, Center, Box } from '@chakra-ui/react';
 
@@ -13,7 +13,21 @@ import { useColorModeValue } from '@chakra-ui/react';
 
 const Main = () => {
   const [page, setPage] = useState('');
+  const [width, setWidth] = useState(window.innerWidth);
   const [menuColumnWidth, setMenuColumnWidth] = useState(4);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
+
   const changePage = (newPage) => {
     if (newPage === 'home') {
       console.log(newPage);
@@ -28,6 +42,63 @@ const Main = () => {
     'rgba(255,255,255,0.8)',
     'rgba(0,0,0,0.2)'
   );
+
+  if (width <= 768){
+    return (
+      <>
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          zIndex: '0',
+          position: 'fixed',
+        }}
+      >
+        <CanvasMenu />
+      </div>
+      <section className='menu'>
+        <Grid templateColumns='repeat(10, 1fr)'>
+          <GridItem
+            h={{ base: '85vh' }}
+            style={{width:'100vw'}}
+          >
+            <Center>
+              <Box
+                bg='rgba(0,0,0,0.9)'
+                w={{ base: '70%', md: '70%', lg: '70%' }}
+                p={4}
+                color='white'
+              >
+                <Menu style={{ zIndex: '1' }} changePage={changePage} />
+              </Box>
+            </Center>
+          </GridItem>
+          <GridItem
+            style={{width:'100vw'}}
+          >
+            <Box bg={transparentBG} mr={{ base: '0', md: '10', lg: '10' }}>
+              <GettingStarted />
+            </Box>
+          </GridItem>
+          <GridItem
+            style={{width:'100vw'}}
+          >
+            <Box bg={transparentBG} mr={{ base: '0', md: '10', lg: '10' }}>
+              <Portfolio />
+            </Box>
+          </GridItem>
+          <GridItem
+            style={{width:'100vw'}}
+          >
+            <Box bg={transparentBG} mr={{ base: '0', md: '10', lg: '10' }}>
+             <AboutUs />
+            </Box>
+          </GridItem>
+        </Grid>
+      </section>
+    </>
+    )
+  }
 
   return (
     <>
