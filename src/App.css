@@ -106,9 +106,13 @@ hr {
   font-family: 'Oswald', sans-serif;
 }
 
-.price-block-mobile {
-  margin: 10vh 15vw;
+@media only screen and (max-width: 768px) {
+  .price-block-mobile {
+    margin: 10vh 15vw;
+  }
 }
+
+
 
 /*CSS for the slider */
 
