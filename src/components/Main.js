@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { Grid, GridItem, Center, Box } from '@chakra-ui/react';
 
@@ -14,24 +14,11 @@ import { useColorModeValue } from '@chakra-ui/react';
 
 const Main = () => {
   const [page, setPage] = useState('home');
-  const [width, setWidth] = useState(window.innerWidth);
   const [menuColumnWidth, setMenuColumnWidth] = useState(4);
-
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
-    return () => {
-      window.removeEventListener('resize', handleWindowSizeChange);
-    };
-  }, []);
 
 
   const changePage = (newPage) => {
     if (newPage === 'home') {
-      console.log(newPage);
       setMenuColumnWidth(4);
     } else {
       setMenuColumnWidth(3);
