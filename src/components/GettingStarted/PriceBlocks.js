@@ -22,18 +22,18 @@ const PriceBlocks = () => {
       "Get a simple and elegant website for your organization to let visitors know what you're all about, for a price that you can afford.",
     point1: 'Simple Website',
     point1Description:
-      'Simplicity is the ultimate sophistication. Get a no nonsense beautiful website to represent you and your business.',
+      'Simplicity is the ultimate sophistication. Get a no nonsense beautiful website to represent you or your business.',
     point2: 'Fast Loading',
     point2Description:
       'Any visitor to your site will be impressed on how fast each page loads.',
-    point3: "Doesn't change often",
+    point3: "Simple Edits",
     point3Description:
-      'To keep things simple, your site will not change in a regular basis, but stand the test of time in its original form.',
-    point4: '5 Pages',
-    point4Description: 'Get 5 beautifully designed pages for your business. ',
-    point5: 'Good for Portfolios or Information Sites',
+      'To keep things simple, your site will have limited ability to make changes, such as change text or create new blog posts.',
+    point4: '5 Unique Pages',
+    point4Description: 'Get 5 beautifully designed unique pages for your website. ',
+    point5: 'Perfect for simple Portfolios or blogs',
     point5Description:
-      "Looking to setup a portfolio or just let visitors know what you're all about? This is the one for you.",
+      "A no-frills get the job done website showcasing what you're all about.",
     price: '$300',
   };
   const professionalSite = {
@@ -42,18 +42,18 @@ const PriceBlocks = () => {
       'Put your organization on the (internet) map with a professional site. Leave your visitors in awe every time. And be able to update your site without writing code.',
     point1: 'Professional, Fancy & Custom Built For You',
     point1Description:
-      "Get a slick website that's built from scratch to match you and your business perfectly.",
+      "Get a slick website using unique features that's built from scratch to match you and your business perfectly.",
     point2: 'Fast Loading',
     point2Description:
       'Any visitor to your site will be impressed on how fast each page loads.',
     point3: 'Add & Change Features',
     point3Description:
       'Have the ability to edit aspects of your site yourself, without ever having to write a single line of code.',
-    point4: '5-10 Pages',
+    point4: '5-10 Unique Pages',
     point4Description: 'Get up to 10 content filled pages, all custom made. ',
-    point5: 'Good for Blogging & Displaying Products',
+    point5: 'Great for Making an Impression',
     point5Description:
-      'Looking to start a blog or just showcase all your cool products? This is the one for you. ',
+      'Carve a unique corner on the internet with your website that will wow your audience',
     price: '$500',
   };
   const ecommerceSite = {
