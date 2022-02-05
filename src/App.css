@@ -55,6 +55,19 @@ hr {
   display: inline-block;
 }
 
+.mobile-content{
+  display:none; 
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-content {
+    display: inline; 
+  }
+  .desktop-content{
+    display:none; 
+  }
+}
+
 /* All the CSS for the pricing/getting started page */
 
 .getting-started {
@@ -188,4 +201,35 @@ hr {
 }
 .about-text p {
   margin-left: 25px;
+}
+
+
+/* Mobile Navigation Bar */
+.app-bar{
+  height: 59px; 
+  padding: 5px; 
+  position: fixed; 
+  bottom:0%;
+  width: 100%; 
+  background-color: black; 
+  z-index: 999;
+}
+
+.app-bar-icon{
+  color:white;
+  font-size:25px; 
+  padding-top: 2px; 
+}
+
+.app-bar-text{
+  color: white;
+  padding: 5px 5px; 
+  font-size: 15px;
+  line-height: 90%;
+  text-align:center;
+}
+
+.app-bar-logo{
+  padding-top: 3px; 
+  max-width: 35px;
 }

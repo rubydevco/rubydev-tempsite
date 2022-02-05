@@ -25,10 +25,12 @@ const Menu = ({ changePage }) => {
       </Link>
       <Link
         style={{ textDecoration: 'none' }}
+        href='#getting-started'
         onClick={() => {
           changePage('getting-started');
+          window.scrollTo(0, 0)
         }}
-        href='#getting-started'
+      
       >
         <MenuLink text='Get Started' />
       </Link>
@@ -36,6 +38,7 @@ const Menu = ({ changePage }) => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           changePage('portfolio');
+          window.scrollTo(0, 0)
         }}
         href='#portfolio'
       >
@@ -45,6 +48,7 @@ const Menu = ({ changePage }) => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           changePage('about-us');
+          window.scrollTo(0, 0)
         }}
         href='#about-us'
       >

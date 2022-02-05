@@ -92,7 +92,7 @@ const PriceBlocks = () => {
   }
   return (
     <div>
-      <Grid templateColumns={{base:'', md:'repeat(3, 1fr)', lg: 'repeat(3, 1fr)'}} gap={2}>
+      <Grid templateColumns={{md:'repeat(3, 1fr)', lg: 'repeat(3, 1fr)'}} gap={{md:'2', lg:'2'}}>
         <Box mt={{base:'',md: '8', lg:'8'}} className='price-block-mobile'>
           <PriceBlock type={basicSite} />
         </Box>
