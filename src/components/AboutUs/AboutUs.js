@@ -5,7 +5,7 @@ import hassan from '../../images/about-us/hassan.jpg';
 
 const AboutUs = () => {
   return (
-    <div className='about' id='about-us'>
+    <div className='about'>
       <h2>About Us</h2>
       <h3>
         <b>ONYX Online</b> was founded by two uOttawa graduates in 2021 during

@@ -12,7 +12,6 @@ const NavigationBar = ({ changePage }) => {
             <Center style={{display:'inline'}}>
                 <Link 
                     style={{ textDecoration: 'none' }}
-                    href='#getting-started'
                     onClick={() => {
                         changePage('getting-started');
                         window.scrollTo(0, 0)
@@ -31,7 +30,6 @@ const NavigationBar = ({ changePage }) => {
             <Center style={{display:'inline'}}>
                 <Link
                     style={{ textDecoration: 'none' }}
-                    href='#portfolio'
                     onClick={() => {
                         changePage('portfolio');
                         window.scrollTo(0, 0)
@@ -65,7 +63,6 @@ const NavigationBar = ({ changePage }) => {
             <Center style={{display:'inline'}}>
                 <Link
                     style={{ textDecoration: 'none' }}
-                    href='#about-us'
                     onClick={() => {
                         changePage('about-us');
                         window.scrollTo(0, 0)
