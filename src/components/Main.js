@@ -47,6 +47,13 @@ const Main = () => {
       </div>
       
       <section className='menu'>
+
+        {page !== 'home' && 
+          <div div className='mobile-content'>
+          <NavigationBar changePage={changePage}/>
+          </div>
+        }
+
         <Grid templateColumns='repeat(10, 1fr)'>
 
           {/* This is for mobile  */}
@@ -69,12 +76,10 @@ const Main = () => {
               </Center>
             </GridItem>
           }
-         
+
           {page !== 'home' && 
             <>
-            <nav className='mobile-content'>
-              <NavigationBar changePage={changePage}/>
-            </nav>
+            
              {page === 'getting-started' &&
               <GridItem
                 colSpan={{
