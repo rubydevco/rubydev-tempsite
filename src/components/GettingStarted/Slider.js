@@ -104,7 +104,7 @@ const Slider = ({ isOpen, onClose, btnRef, type }) => {
                   >
                     {type.title === 'E-COMMERCE' ? 'BASIC' : 'E-COMMERCE'}
                   </option>
-                  <option value='Not Sure'>Note Sure</option>
+                  <option value='Not Sure'>Not Sure</option>
                 </Select>
               </FormControl>
               <FormLabel my={4}>Other Comments</FormLabel>

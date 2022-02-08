@@ -172,10 +172,14 @@ hr {
 .about-pic {
   display: inline-block;
   text-align: center;
-  padding: 15px 15px;
+  padding: 15px 0;
   width: 45%;
   max-width: 400px;
   vertical-align: top;
+}
+.about-space {
+  display: inline-block;
+  width: 30px;
 }
 .about-pic img {
   margin: auto;
@@ -201,6 +205,14 @@ hr {
 }
 .about-text p {
   margin-left: 25px;
+}
+@media only screen and (max-width: 500px) {
+  .about a {
+    font-size: 12px;
+  }
+  .about h3 {
+    font-size: 16pt;
+  }
 }
 
 
