@@ -26,35 +26,35 @@ const PriceBlocks = () => {
     point2: 'Fast Loading',
     point2Description:
       'Any visitor to your site will be impressed on how fast each page loads.',
-    point3: "Simple Edits",
+    point3: "Edit and create new Pages",
     point3Description:
-      'To keep things simple, your site will have limited ability to make changes, such as change text or create new blog posts.',
+      'Easily and intuitively add new blog pages or edit existing ones',
     point4: '5 Unique Pages',
-    point4Description: 'Get 5 beautifully designed unique pages for your website. ',
+    point4Description: 'Get 5 beautifully designed unique pages for your website',
     point5: 'Perfect for simple Portfolios or blogs',
     point5Description:
       "A no-frills get the job done website showcasing what you're all about.",
-    price: '$300',
+    price: '$500',
   };
   const professionalSite = {
     title: 'PROFESSIONAL',
     description:
       'Put your organization on the (internet) map with a professional site. Leave your visitors in awe every time. And be able to update your site without writing code.',
-    point1: 'Professional, Fancy & Custom Built For You',
+    point1: 'Custom Built For You',
     point1Description:
-      "Get a slick website using unique features that's built from scratch to match you and your business perfectly.",
+      "Includes all features of the Basic Website, but with any extra fancy features that your site will desire",
     point2: 'Fast Loading',
     point2Description:
       'Any visitor to your site will be impressed on how fast each page loads.',
-    point3: 'Add & Change Features',
+    point3: 'Advanced Features',
     point3Description:
-      'Have the ability to edit aspects of your site yourself, without ever having to write a single line of code.',
+      'Custom coded components on your site that will allow you or your viewers to interact with your site',
     point4: '5-10 Unique Pages',
     point4Description: 'Get up to 10 content filled pages, all custom made. ',
     point5: 'Great for Making an Impression',
     point5Description:
       'Carve a unique corner on the internet with your website that will wow your audience',
-    price: '$500',
+    price: '$700',
   };
   const ecommerceSite = {
     title: 'E-COMMERCE',

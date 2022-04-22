@@ -18,7 +18,7 @@ const Portfolio = () => {
       img: thirtyfivemm,
       link: 'https://www.35mm.website/',
       title: '35mm',
-      caption: 'A photo gallery of travelling through Vietnam',
+      caption: 'A photo gallery of traveling through Vietnam',
       loaded: false,
     },
     {
@@ -87,7 +87,7 @@ const Portfolio = () => {
 
         <SimpleGrid
           minChildWidth={{ base: '50vw', md: '15vw', lg: '30vw' }}
-          spacing={2}
+          spacing={5}
         >
           {images.map((image, key) => (
             <Link
@@ -96,10 +96,15 @@ const Portfolio = () => {
               style={{ textDecoration: 'none' }}
               key={key}
             >
+              <div class="portfolio-box">
+              <Box bg='white' borderWidth='1px' borderRadius='lg' overflow='hidden'>
               <Sites site={image}></Sites>
+              
               <div className='portfolio-image-caption'>
                 <h3>{image.title}</h3>
                 <p>{image.caption}</p>
+              </div>
+              </Box>
               </div>
             </Link>
           ))}
