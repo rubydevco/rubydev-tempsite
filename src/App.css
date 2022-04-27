@@ -12,9 +12,13 @@ hr {
 /* All the CSS for the home page */
 
 .menu {
-  position: absolute;
-  top: 15vh !important;
+  position: relative;
   width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  z-index:5;
 }
 
 .menu-link {

@@ -1,4 +1,4 @@
-import logo from '../../images/OnyxOnline+logo+text+2.png';
+import logo from '../../images/OnyxOnline+logo+text+2-compress.png';
 
 const Title = () => {
   return (
