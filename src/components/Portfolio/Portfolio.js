@@ -86,7 +86,8 @@ const Portfolio = () => {
         <h2>Our Recent Work</h2>
 
         <SimpleGrid
-          minChildWidth={{ base: '50vw', md: '15vw', lg: '30vw' }}
+
+          columns={{ base: 1, md: 2}}
           spacing={5}
         >
           {images.map((image, key) => (
@@ -97,7 +98,7 @@ const Portfolio = () => {
               key={key}
             >
               <div class="portfolio-box">
-              <Box bg='white' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+              <Box bg='' borderWidth='1px' borderRadius='lg' overflow='hidden'>
               <Sites site={image}></Sites>
               
               <div className='portfolio-image-caption'>
