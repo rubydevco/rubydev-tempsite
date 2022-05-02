@@ -197,6 +197,17 @@ hr {
 .about a {
   font-style: italic;
 }
+.email {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: white;
+  background-color: #fb7185;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 90px;
+  width:fit-content;
+  padding: 2px 12px;
+}
 .about h2 {
   font-size: 32pt;
   opacity: 1;
@@ -217,9 +228,6 @@ hr {
   margin-left: 25px;
 }
 @media only screen and (max-width: 500px) {
-  .about a {
-    font-size: 12px;
-  }
   .about h3 {
     font-size: 16pt;
   }
