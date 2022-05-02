@@ -14,14 +14,13 @@ const AboutUs = () => {
       <div className='about-pic'>
         <Image src={hassan} alt='Hassan Profile' borderRadius='full'></Image>
         <h3>Hassan Ahmed</h3>
-        <a href='mailto:hassan@onyxonline.ca'>hassan@onyxonline.ca</a>
       </div>
       <div className='about-space'></div>
       <div className='about-pic'>
         <Image src={evan} alt='Evan Profile' borderRadius='full'></Image>
         <h3>Evan Chan</h3>
-        <a href='mailto:evan@onyxonline.ca'>evan@onyxonline.ca</a>
       </div>
+      <div className='email'><a href='mailto:onyxonlineinfo@gmail.com'>onyxonlineinfo@gmail.com</a></div>
       <h3>ONYX Online follows a short simple list of rules to live by</h3>
       <div className='about-text'>
         <h4>1. Independence</h4>
