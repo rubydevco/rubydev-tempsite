@@ -176,12 +176,15 @@ hr {
   left: 50%;
 }
 
-/* ABOUT US */
-.about {
+/* Why US */
+.whyUs {
   text-align: center;
   padding: 10px 30px;
 }
-.about-pic {
+.whyUs li {
+  text-align: left;
+}
+.whyUs-pic {
   display: inline-block;
   text-align: center;
   padding: 15px 0;
@@ -189,14 +192,14 @@ hr {
   max-width: 400px;
   vertical-align: top;
 }
-.about-space {
+.whyUs-space {
   display: inline-block;
   width: 30px;
 }
-.about-pic img {
+.whyUs-pic img {
   margin: auto;
 }
-.about a {
+.whyUs a {
   font-style: italic;
 }
 .email {
@@ -210,27 +213,27 @@ hr {
   width:fit-content;
   padding: 2px 12px;
 }
-.about h2 {
+.whyUs h2 {
   font-size: 32pt;
   opacity: 1;
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
-.about h3 {
+.whyUs h3 {
   font-size: 18pt;
 }
-.about h4 {
+.whyUs h4 {
   font-size: 16pt;
   font-style: bold;
 }
-.about-text {
+.whyUs-text {
   text-align: left;
 }
-.about-text p {
+.whyUs-text p {
   margin-left: 25px;
 }
 @media only screen and (max-width: 500px) {
-  .about h3 {
+  .whyUs h3 {
     font-size: 16pt;
   }
 }

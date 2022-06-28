@@ -7,7 +7,7 @@ import CanvasMenu from '../js/CanvasMenu';
 
 import GettingStarted from './GettingStarted/GettingStarted';
 import Portfolio from './Portfolio/Portfolio';
-import AboutUs from './AboutUs/AboutUs';
+import WhyUs from './WhyUs/WhyUs';
 import NavigationBar from './MobileNavigation/NavigationBar';
 
 import { useColorModeValue } from '@chakra-ui/react';
@@ -124,7 +124,7 @@ const Main = () => {
                 pb='20'
               >
                 <Box bg={transparentBG} mr={{ base: '0', md: '10', lg: '10' }}>
-                  <AboutUs />
+                  <WhyUs />
                 </Box>
               </GridItem>
             }
@@ -163,7 +163,7 @@ const Main = () => {
               <Box bg={transparentBG} mr={{ base: '0', md: '10', lg: '10' }}>
                 {page === 'getting-started' && <GettingStarted />}
                 {page === 'portfolio' && <Portfolio />}
-                {page === 'about-us' && <AboutUs />}
+                {page === 'about-us' && <WhyUs />}
               </Box>
             </GridItem>
           }
