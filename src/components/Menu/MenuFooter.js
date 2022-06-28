@@ -1,5 +1,5 @@
 import { Link, IconButton, Box, Center } from '@chakra-ui/react';
-import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 const MenuFooter = () => {
   return (
@@ -7,7 +7,7 @@ const MenuFooter = () => {
       <Box mt='4'>
         <Center>
           <Link
-            href='https://www.instagram.com/onyxonlinehq/'
+            href='https://www.linkedin.com/company/ruby-dev'
             isExternal
             pr={2}
             className='social'
@@ -15,37 +15,7 @@ const MenuFooter = () => {
             <IconButton
               size='md'
               aria-label='Instagram Link'
-              icon={<FaInstagram />}
-              bg='gray.800'
-              color='white'
-            />
-          </Link>
-
-          <Link
-            href='https://www.facebook.com/ONYXOnlineHQ/'
-            isExternal
-            pr={2}
-            className='social'
-          >
-            <IconButton
-              size='md'
-              aria-label='Facebook Link'
-              icon={<FaFacebookF />}
-              bg='gray.800'
-              color='white'
-            />
-          </Link>
-
-          <Link
-            href='https://twitter.com/onyxonlinehq'
-            isExternal
-            pr={2}
-            className='social'
-          >
-            <IconButton
-              size='md'
-              aria-label='Twitter Link'
-              icon={<FaTwitter />}
+              icon={<FaLinkedinIn />}
               bg='gray.800'
               color='white'
             />

@@ -46,6 +46,7 @@ hr {
 }
 .title img {
   filter: invert(1);
+  width: 326px;
 }
 
 .footer {
@@ -70,6 +71,7 @@ hr {
   .desktop-content{
     display:none; 
   }
+
 }
 
 /* All the CSS for the pricing/getting started page */
