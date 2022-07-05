@@ -79,6 +79,22 @@ hr {
 .getting-started {
   margin: 0 2vw;
 }
+.features {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding-bottom: 20px;
+}
+.features h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+}
+@media only screen and (max-width: 800px) {
+  .features {
+    grid-template-columns: auto;
+  }
+}
 
 .prices-title {
   font-size: 2.2rem;
@@ -93,7 +109,7 @@ hr {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
-  margin-bottom: 7vh;
+  margin-bottom: 20px;
 }
 
 .price-block-title-box {
@@ -157,6 +173,28 @@ hr {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2.5vh;
+}
+.recent-portal-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding-bottom: 20px;
+}
+.recent-portal img {
+  height: 250px;
+  width: 250px;
+  margin-left:auto;
+  margin-right: auto;
+}
+.recent-portal h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+}
+@media only screen and (max-width: 900px) {
+  .recent-portal-container {
+    grid-template-columns: auto;
+  }
 }
 
 .portfolio-image-caption h3 {

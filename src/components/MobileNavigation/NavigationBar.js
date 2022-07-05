@@ -23,7 +23,7 @@ const NavigationBar = ({ changePage }) => {
                         </div>
                     </Center>
                     <Center className="app-bar-text">
-                        <p>Pricing</p>
+                        <p>Features</p>
                     </Center>
                 </Link>
             </Center>

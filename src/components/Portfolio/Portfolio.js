@@ -1,115 +1,24 @@
-import { SimpleGrid, Link, Box } from '@chakra-ui/react';
-
-import merci from '../../images/portfolio-compress/merci.jpg';
-import thirtyfivemm from '../../images/portfolio-compress/35mm.jpg';
-import cvuo from '../../images/portfolio-compress/cvuo.jpg';
-import designleague from '../../images/portfolio-compress/designleague.jpg';
-import mess from '../../images/portfolio-compress/mess.jpg';
-import mpsp from '../../images/portfolio-compress/mpsp.jpg';
-import ruby from '../../images/portfolio-compress/ruby.jpg';
-import thatmakergirl from '../../images/portfolio-compress/thatmakergirl.jpg';
-
-import Sites from './Sites';
+import cvuo from '../../images/recent-portals/cvuo_material_dp.png';
+import csu from '../../images/recent-portals/CSU_Logo.svg';
+import { Box } from '@chakra-ui/react';
 
 const Portfolio = () => {
-  var images = [
-    {
-      id: 0,
-      img: thirtyfivemm,
-      link: 'https://www.35mm.website/',
-      title: '35mm',
-      caption: 'A photo gallery of traveling through Vietnam',
-      loaded: false,
-    },
-    {
-      id: 1,
-      img: merci,
-      link: 'https://www.mercicanada.org/',
-      title: 'MERCI',
-      caption: 'A philanthropic University club',
-      loaded: false,
-    },
-    {
-      id: 2,
-      img: thatmakergirl,
-      link: 'https://www.thatmakergirl.ca/',
-      title: 'That Maker Girl',
-      caption: 'Storefront bringing local handmade art ideas to life',
-      loaded: false,
-    },
-    {
-      id: 3,
-      img: designleague,
-      link: 'https://www.uottawadesignleague.ca/',
-      title: 'uOttawa Design League',
-      caption: 'An event for a 3-day University of Ottawa student event',
-      loaded: false,
-    },
-    {
-      id: 4,
-      img: cvuo,
-      link: 'https://cvuo.ca/',
-      title: 'CVUO',
-      caption: 'The massive clubs portal for the University of Ottawa',
-      loaded: false,
-    },
-    {
-      id: 5,
-      img: mess,
-      link: 'https://mess-segm.ca/',
-      title: 'MESS',
-      caption: 'The hub for the Mechanical Engineering Student Society',
-      loaded: false,
-    },
-    {
-      id: 6,
-      img: mpsp,
-      link: 'https://uottawampsp.com/',
-      title: 'uOttawa MPSP',
-      caption:
-        'A site for students aspiring for the opportunity to participate as members of Parliament at the House of Commons',
-      loaded: false,
-    },
-    {
-      id: 7,
-      img: ruby,
-      link: 'https://rubydev.ca/',
-      title: 'Ruby Dev.',
-      caption: 'A software development company',
-      loaded: false,
-    },
-  ];
-
   return (
     <div className='portfolio'>
       <Box mx={8}>
         <h2>Our Recent Work</h2>
-
-        <SimpleGrid
-
-          columns={{ base: 1, md: 2}}
-          spacing={5}
-        >
-          {images.map((image, key) => (
-            <Link
-              href={image.link}
-              isExternal
-              style={{ textDecoration: 'none' }}
-              key={key}
-            >
-              <div class="portfolio-box">
-              <Box bg='' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-              <Sites site={image}></Sites>
-              
-              <div className='portfolio-image-caption'>
-                <h3>{image.title}</h3>
-                <p>{image.caption}</p>
-              </div>
-              </Box>
-              </div>
-            </Link>
-          ))}
-        </SimpleGrid>
+        <div className='recent-portal-container'>
+          <div className='recent-portal'>
+            <img src={cvuo} alt='CVUO logo'></img>
+            <h4>Campus Vibez uOttawa</h4>
+            <p>We built the University of Ottawa's club portal back when we students there. We were volunteering members of Campus Vibez uOttawa (CVUO) decided to create a clubs portal because uOttawa was severely lacking one. It was a lot of work but has completely changed and shaped CVUO as it is today.</p>
+          </div>
+          <div className='recent-portal'>
+            <img src={csu} alt='CSU logo'></img>
+            <h4>Concordia Student Union</h4>
+            <p>We were contracted by Concordia Student Union to create a clubs portal for them. Creating this portal was another great learning experience of creating a very slick and efficient portal for sharing files between clubs and the student union.</p>
+          </div>
+         </div>
       </Box>
     </div>
   );
